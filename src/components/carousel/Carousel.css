@@ -1,6 +1,8 @@
 .carousel__wrapper {
   overflow-x: hidden;
   position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .carousel__controls__wrapper {
