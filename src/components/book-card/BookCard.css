@@ -1,0 +1,46 @@
+.book-card {
+  background-color: white;
+  padding: 10px;
+}
+
+.book-card--regular {
+  width: 200px;
+  /* height: 300px; */
+}
+
+.book-card__bookcover-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.book-card__bookcover-img {
+  height: 240px;
+  width: 180px;
+}
+
+.book-card__title {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  padding: 10px 0px;
+}
+
+.book-card__author {
+  font-size: 15px;
+  margin: 0;
+}
+
+.book-card__price {
+  font-size: 20px;
+  color: hotpink;
+}
+
+.book-card__old-price {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.book-card__old-price--strikethrough {
+  text-decoration: line-through;
+}
+

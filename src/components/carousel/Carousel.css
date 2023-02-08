@@ -1,0 +1,38 @@
+.carousel__wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.carousel__controls__wrapper {
+  position: absolute;
+  z-index: 1;
+  /* top: 50%; */
+  /* background-color: rgba(255,255,255,0.8); */
+  background-color: red;
+  cursor: pointer;
+  text-decoration: none;
+  /* height: 100%; */
+  text-align: center;
+  top: 0;
+  bottom: 0;
+}
+
+.carousel__controls__prev__btn {
+  visibility: hidden;
+}
+
+.carousel__controls__next__btn {
+  right: 0;
+}
+
+.carousel__controls__img {
+  position: relative;
+  top: 50%;
+  background-color: green;
+  text-align: center;
+}
+
+.carousel__book-card {
+  display: flex;
+  column-gap: 10px;
+}

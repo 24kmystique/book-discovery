@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+// import components
+import Carousel from "./components/carousel/Carousel";
+
+// import libraries
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 function App() {
+  // Set initial value for state variables
+  const [topRatingBooks, setTopRatingBooks] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:5000/top-20-books')
+      .then(function (response) {
+        setTopRatingBooks(response.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+  }, [topRatingBooks.length]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>Book Discovery</h1>
+      <h2>4 Stars ratings and above</h2>
+      <Carousel books={topRatingBooks} dataTitle="topRatingBooks" />
     </div>
   );
 }
