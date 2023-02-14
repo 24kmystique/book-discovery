@@ -1,0 +1,28 @@
+.query__input-wrapper {
+  width: 500px;
+}
+
+.query__input {
+  width: 100%;
+}
+
+.query__all-results-wrapper--relative-pos {
+  position: relative;
+}
+
+.query__all-results-wrapper--absolute-pos {
+  position: absolute;
+  z-index: 2;
+}
+
+.query__single-result-wrapper {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.query__result-img {
+  width: 60px;
+}
