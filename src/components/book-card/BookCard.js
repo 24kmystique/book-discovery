@@ -1,6 +1,9 @@
 import "./BookCard.css";
+import { UriEncoder } from "../../helper/UriEncoder";
 
+// import libraries
 import StarRatings from "react-star-ratings";
+import { Link, Outlet } from "react-router-dom";
 
 // parameters:
 // author, rating, category, currency, format, image, img_paths, isbn, name, oldPrice, price
@@ -47,13 +50,14 @@ function BookCard(props) {
     return bookname;
   }
 
-
   return (
     <div className="book-card book-card--regular" key={props.isbn}>
       <div className="book-card__bookcover-wrapper">
         <img className="book-card__bookcover-img" alt="bookcover" src={props.image}/>
       </div>
-      <h3 className="book-card__title">{getBookName(props.name)}</h3>
+      <Link to={UriEncoder(props.name) + `/${props.isbn}`}>
+        <h3 className="book-card__title">{getBookName(props.name)}</h3>
+      </Link>
       <p className="book-card__author">{props.author}</p>
       <div><StarRatings rating={props.rating} starRatedColor="rgb(255,255,0)" starEmptyColor="rgb(211,211,211)" starDimension="15px" starSpacing="1px" /></div>
       <div>
@@ -72,6 +76,7 @@ function BookCard(props) {
       
       
       <button>Add to basket</button>
+
     </div>
   )
 }
