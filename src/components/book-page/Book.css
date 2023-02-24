@@ -1,0 +1,124 @@
+.book-page--grid-wrapper {
+  display: grid;
+  grid-template-columns: 30vw 50vw 20vw;
+  border: black 2px solid;
+  padding-top: 15px;
+}
+
+.book-page__bookcover-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.book-page__bookcover-img {
+  width: 300px;
+}
+
+.book-page__price-wrapper {
+  display: flex;
+  align-items: end;
+  column-gap: 10px;
+}
+
+.book-page__price {
+  font-size: 30px;
+  color: #ff0072;
+}
+
+.book-page__old-price {
+  font-size: 16px;
+  font-style: italic;
+  color: #333;
+}
+
+.book-page__old-price--strikethrough {
+  text-decoration: line-through;
+}
+
+.book-page__shipping-info-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.book-page__shipping-info-item {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  align-items: center;
+}
+
+.btn__primary {
+  display: flex;
+  width: 100%;
+  background-color: #10bbd5;
+  color: #fff;
+  border: none;
+  height: 3rem;
+  padding: 0 1.7rem;
+  margin: 0;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn__light {
+  display: flex;
+  width: 100%;
+  color: #959595;
+  border: none;
+  height: 3rem;
+  padding: 0 1.7rem;
+  margin: 0;
+  border-radius: 0.6rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn__primary:hover {
+  box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+}
+
+.btn__light:hover {
+  color: #666;
+  background: #f0f0f0;
+}
+
+.book-page__socials-icon-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-weight: bold;
+}
+
+.book-page__socials-icon {
+  display: flex;
+  border-radius: 50%;
+  color: #959595;
+  width: fit-content;
+  padding: 5px 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.book-page__socials-icon:hover {
+  background: #dadada;
+}
+
+.book-page__socials-mail-icon:hover {
+  color: #fff;
+}
+
+.book-page__socials-fb-icon:hover {
+  color: #4267B2;
+}
+
+.book-page__socials-twitter-icon:hover {
+  color: #1DA1F2;
+}
+
+.book-page__socials-pinterest-icon:hover {
+  color: #E60023;
+}

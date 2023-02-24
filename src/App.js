@@ -2,7 +2,7 @@ import "./App.css";
 
 // import components
 import Home from "./components/Home";
-import Book from "./components/Book";
+import Book from "./components/book-page/Book";
 import { UriEncoder } from "./helper/UriEncoder";
 
 // import libraries

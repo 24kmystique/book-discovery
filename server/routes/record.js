@@ -32,4 +32,16 @@ recordRoutes.route("/top-20-books").get(function (req, res) {
     });
  });
 
+ recordRoutes.route("/:bookname/:isbn").get(function (req, res) {
+  let db_connect = dbo.getDb();
+  let isbn = parseInt(req.params.isbn);
+  db_connect
+    .collection("bookcovers")
+    .find({isbn: isbn})
+    .toArray(function (err, result) {
+      if (err) throw err;
+      res.json(result);
+    })
+ });
+
 module.exports = recordRoutes;

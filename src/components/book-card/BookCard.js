@@ -1,5 +1,6 @@
 import "./BookCard.css";
 import { UriEncoder } from "../../helper/UriEncoder";
+import { OldPriceExists, CalculateAmtSaved } from "../../helper/BookHelper";
 
 // import libraries
 import StarRatings from "react-star-ratings";
@@ -8,16 +9,7 @@ import { Link, Outlet } from "react-router-dom";
 // parameters:
 // author, rating, category, currency, format, image, img_paths, isbn, name, oldPrice, price
 function BookCard(props) {
-
-  function oldPriceExists(oldPrice) {
-    if (oldPrice) return true;
-    return false;
-  }
-
-  function calculateAmtSaved(newAmt, oldAmt) {
-    return (oldAmt - newAmt).toFixed(2);
-  }
-
+  
   /**
    * Given a book name, return a book name that fits into two rows.
    * 
@@ -62,14 +54,14 @@ function BookCard(props) {
       <div><StarRatings rating={props.rating} starRatedColor="rgb(255,255,0)" starEmptyColor="rgb(211,211,211)" starDimension="15px" starSpacing="1px" /></div>
       <div>
         <div className="book-card__price">{props.price}</div>
-        {oldPriceExists(props.oldPrice) ? 
+        {OldPriceExists(props.oldPrice) ? 
           <div className="book-card__old-price book-card__old-price--strikethrough">{props.oldPrice}</div>
           :
           undefined
         }
       </div>
-      {oldPriceExists(props.oldPrice) ? 
-        <div className="book-card__old-price">Save {calculateAmtSaved(props.price, props.oldPrice)}</div>
+      {OldPriceExists(props.oldPrice) ? 
+        <div className="book-card__old-price">Save {CalculateAmtSaved(props.price, props.oldPrice)}</div>
         :
         undefined
       }
