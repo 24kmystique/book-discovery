@@ -1,5 +1,7 @@
-# Book Discovery
-A web app
+# Book Discovery [ongoing development]
+A cloned web app of [Book Depository](https://www.bookdepository.com/).
+
+The objective of the project is to use to ReactJS and MongoDB database to develop the website. Also, to include unit test to verify the behavior of each part of the software, robustness and security of the website.
 
 ## How to run the project
 ### Steps to run the project locally (i.e. on your laptop)
