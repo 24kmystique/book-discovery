@@ -1,17 +1,75 @@
 .book-page--grid-wrapper {
   display: grid;
-  grid-template-columns: 30vw 50vw 20vw;
+  grid-template-columns: 70% 30%;
   border: black 2px solid;
-  padding-top: 15px;
+  margin: 10px 20px;
+}
+
+.book-page__preview-wrapper {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background-color: lightblue;
+  padding: 20px 0;
 }
 
 .book-page__bookcover-img-wrapper {
   display: flex;
   justify-content: center;
+  align-items: start;
 }
 
 .book-page__bookcover-img {
-  width: 300px;
+  width: 270px;
+  object-fit: contain;
+}
+
+.book-page__desc-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.book-page__desc-title {
+  padding-bottom: 5px;
+  border-bottom: solid #959595 1px;
+  margin: 0;
+}
+
+.book-page__desc-rating-format-author-wrapper {
+  padding: 10px 0;
+}
+
+.book-page__desc-txt {
+  margin: 0;
+  padding-bottom: 4px;
+}
+
+.book-page__desc-rating-txt {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.book-page__desc-summary-wrapper {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+#book-page__show-more-btn {
+  border: none;
+  background-color: none;
+  color: #10bbd5;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#book-page__show-more-txt {
+  display: none;
+}
+
+.book-page__right-col-wrapper {
+  background-color: lightcoral;
+  margin-left: 10px;
+  padding: 20px;
 }
 
 .book-page__price-wrapper {
@@ -60,12 +118,14 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .btn__light {
   display: flex;
   width: 100%;
-  color: #959595;
+  background-color: #f0f0f0;
+  color: #999;
   border: none;
   height: 3rem;
   padding: 0 1.7rem;
@@ -75,6 +135,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .btn__primary:hover {
@@ -91,12 +152,14 @@
   gap: 20px;
   align-items: center;
   font-weight: bold;
+  padding: 10px 0;
 }
 
 .book-page__socials-icon {
   display: flex;
   border-radius: 50%;
-  color: #959595;
+  color: #999;
+  background-color: #f0f0f0;
   width: fit-content;
   padding: 5px 8px;
   align-items: center;
@@ -121,4 +184,31 @@
 
 .book-page__socials-pinterest-icon:hover {
   color: #E60023;
+}
+
+.book-page__product-details-wrapper {
+  border: solid 2px red;
+  background-color: lightyellow;
+  padding: 0 20px;
+  margin: 10px 20px;
+}
+
+.book-page__product-details-list-col-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1000px;
+}
+
+.book-page__product-details-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.book-page__product-details-list li {
+  padding: 8px 0;
+}
+
+.book-page__product-details-list label {
+  font-weight: bold;
 }
