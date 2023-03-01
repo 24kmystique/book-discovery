@@ -1,0 +1,44 @@
+.user-nav__wrapper {
+  background-color: #403042;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.user-nav__left-wrapper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding-left: 40px;
+  column-gap: 10px;
+}
+
+.user-nav__right-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 40px;
+  column-gap: 10px;
+}
+
+.user-nav__middle-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.user-nav__txt {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.user-nav__delivery-img {
+  background-image: url(https://d3ogvdx946i4sr.cloudfront.net/assets/v2.25.74/img/free-delivery-single-bg.png);
+  min-width: 320px;
+  background-repeat: no-repeat;
+  justify-self: center;
+}
