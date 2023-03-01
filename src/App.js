@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Book from "./components/book-page/Book";
 import { UriEncoder } from "./helper/UriEncoder";
 import UserNavBar from "./components/user-nav-bar/UserNavBar";
+import Header from "./components/header/Header";
 
 // import libraries
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -20,6 +21,7 @@ function App() {
 
       <BrowserRouter>
         <UserNavBar />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path=":bookname/:id" element={<Book />} />
