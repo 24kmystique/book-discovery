@@ -2,6 +2,7 @@ import "./QueryBar.css";
 
 // import libraries
 import { useState } from "react";
+import { AiOutlineSearch } from "react-icons/ai";
 
 /**
  * Search bar component to search for an item within `props.dataBank`
@@ -36,7 +37,11 @@ function QueryBar(props) {
 
   return (
     <div className="query__input-wrapper">
-      <input className="query__input" type="search" onChange={handleSearch} placeholder={props.title} />
+      <div className="query__input-bar-wrapper">
+        <input className="query__input" type="search" onChange={handleSearch} placeholder={props.title} />
+        <AiOutlineSearch size={20} className="query__input-icon" />
+      </div>
+      
       <div className="query__all-results-wrapper--relative-pos">
         <div className="query__all-results-wrapper--absolute-pos">
           {searchResult.map((query) => 
