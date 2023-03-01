@@ -16,6 +16,12 @@ The objective of the project is to use to ReactJS and MongoDB database to develo
 - Run the following code:
 `mongoimport --uri 'mongodb+srv://<user>:<admin>@cluster3.mongodb.net/?retryWrites=true&w=majority' --db kaggle-bookcovers-dataset --collection bookcovers --type=csv --headerline --file=<path-of-csv-file>`
 
+### Web scrap
+### Setup
+- Create a virtual environment and activate it
+- Install: `pip install beautifulsoup4`
+- `pip install requests`
+
 ## Tutorial links that helped in building this project
 - [Install MongoDB Database Tool](https://www.mongodb.com/docs/database-tools/installation/installation-macos/) (required to use `mongoimport` to import JSON dataset to MongoDB)
 
