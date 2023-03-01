@@ -1,4 +1,5 @@
 import "./Book.css";
+import "../button/Button.css";
 import { OldPriceExists, CalculateAmtSaved } from "../../helper/BookHelper";
 import { IoRocketOutline } from "react-icons/io5";
 import { AiOutlineMail } from "react-icons/ai";
@@ -130,11 +131,10 @@ function Book() {
                     <p>Not ordering to Singapore? Click here.</p>
                   </div>
                 </div>
-                
-                <div className="btn-wrapper">
+                <div  className="book-page__btn-wrapper">
                   <button className="btn__primary">Add to basket</button>
-                  <button className="btn__light">Add to wishlist</button>
                 </div>
+                <button className="btn__light">Add to wishlist</button>
               </div>
             </div>
           
