@@ -8,6 +8,7 @@
 
 .header__brand-wrapper {
   width: 150px;
+  min-width: 150px;
   margin-left: 40px;
   margin-right: 40px;
 }
