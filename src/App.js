@@ -6,6 +6,7 @@ import Book from "./components/book-page/Book";
 import { UriEncoder } from "./helper/UriEncoder";
 import UserNavBar from "./components/user-nav-bar/UserNavBar";
 import Header from "./components/header/Header";
+import SecondaryHeader from "./components/secondary-header/SecondaryHeader";
 import CategoryDropdown from "./components/category-dropdown/CategoryDropdown";
 
 // import libraries
@@ -23,7 +24,8 @@ function App() {
       <BrowserRouter>
         <UserNavBar />
         <Header />
-        <CategoryDropdown />
+        <SecondaryHeader />
+        {/* <CategoryDropdown /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path=":bookname/:id" element={<Book />} />
