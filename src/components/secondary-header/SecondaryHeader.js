@@ -4,6 +4,7 @@ import { RiShoppingBasket2Fill } from "react-icons/ri";
 
 import "./SecondaryHeader.css";
 import CategoryDropdown from "../category-dropdown/CategoryDropdown";
+import LanguageDropdown from "../language-dropdown/LanguageDropdown";
 
 function SecondaryHeader() {
   return (
@@ -16,7 +17,7 @@ function SecondaryHeader() {
                 <MdKeyboardArrowDown size={24} className="sec-header__arrow-down-icon" />
                 <MdKeyboardArrowUp size={24} className="sec-header__arrow-up-icon" />
             </Link>
-            <div className="sec-header__cat-dropdown-wrapper">
+            <div className="sec-header__dropdown-wrapper">
               <CategoryDropdown />
             </div>
           </div>
@@ -25,11 +26,16 @@ function SecondaryHeader() {
           <Link className="sec-header__link">New Releases</Link>
         </nav>
         <nav className="sec-header__right-wrapper">
-          <Link className="sec-header__link">
-            <label className="sec-header__title">English</label>
-            <MdKeyboardArrowDown size={24} className="sec-header__arrow-down-icon" />
-            <MdKeyboardArrowUp size={24} className="sec-header__arrow-up-icon" />
-          </Link>
+          <div className="sec-header__link-wrapper">
+            <Link className="sec-header__link">
+              <label className="sec-header__title">English</label>
+              <MdKeyboardArrowDown size={24} className="sec-header__arrow-down-icon" />
+              <MdKeyboardArrowUp size={24} className="sec-header__arrow-up-icon" />
+            </Link>
+            <div className="sec-header__dropdown-wrapper">
+              <LanguageDropdown />
+            </div>
+          </div>
           <Link className="sec-header__link">
             <label className="sec-header__title">$ SGD</label>
             <MdKeyboardArrowDown size={24} className="sec-header__arrow-down-icon" />
