@@ -2,6 +2,7 @@ import BookCard from "../book-card/BookCard";
 import "./Carousel.css";
 
 import { useState } from "react";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 /**
  * Given a dictionary of `carouselItems`, create a carousel with these items. The carousel includes a previous and next button to scroll the carousel. 
@@ -81,7 +82,7 @@ function Carousel (props) {
   return (
     <div className="carousel__wrapper">
       <div className="carousel__controls__wrapper carousel__controls__prev__btn" id={CAROUSEL_PREV_BTN_ID} onClick={handleCarouselPrev}>
-        <i className="carousel__controls__img">left</i>
+        <i className="carousel__controls__img"><IoIosArrowBack size={34} /></i>
       </div>
 
       <div style={{transform: `translateX(${-currentSlideIdx * 100}%)`}}>
@@ -93,7 +94,7 @@ function Carousel (props) {
       </div>
 
       <div className="carousel__controls__wrapper carousel__controls__next__btn" id={CAROUSEL_NEXT_BTN_ID} onClick={handleCarouselNext}>
-        <i className="carousel__controls__img">right</i>
+        <i className="carousel__controls__img"><IoIosArrowForward size={34} /></i>
       </div>
     </div>
 

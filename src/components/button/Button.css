@@ -14,6 +14,14 @@
   font-size: 15px;
 }
 
+.btn__primary--bolded {
+  font-weight: bold;
+}
+
+.btn__primary--sm {
+  height: 2.5rem;
+}
+
 .btn__light {
   display: flex;
   width: 100%;
