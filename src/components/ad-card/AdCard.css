@@ -1,0 +1,16 @@
+.ad-card__wrapper {
+  background-color: white;
+  width: 200px;
+  border-radius: 3px;
+}
+
+.ad-card__img {
+  max-width: 200px;
+  object-fit: cover;
+}
+
+.ad-card__txt {
+  margin: 0;
+  padding: 8px;
+  line-height: 24px;
+}
