@@ -4,6 +4,7 @@ import "./Home.css";
 import Carousel from "../carousel/Carousel";
 import SideBar from "../side-bar/SideBar";
 import Footer from "../footer/Footer";
+import SubscribeNewsletterInput from "../subscribe-newsletter-input/SubscribeNewsletterInput";
 
 // import libraries
 import axios from "axios";
@@ -43,6 +44,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <SubscribeNewsletterInput />
       <Footer />
     </div>
   )
