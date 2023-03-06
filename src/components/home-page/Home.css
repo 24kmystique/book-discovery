@@ -1,0 +1,14 @@
+.home__wrapper {
+  margin: 10px 40px 40px 40px;
+  display: grid;
+  grid-template-columns: auto 80%;
+}
+
+.home__side-bar--margin {
+  margin-right: 10px;
+}
+
+.home__carousel-wrapper {
+  display: flex;
+  flex-direction: column;
+}
