@@ -2,8 +2,8 @@ import "./Home.css";
 
 // import components
 import Carousel from "../carousel/Carousel";
-import QueryBar from "../query-bar/QueryBar";
 import SideBar from "../side-bar/SideBar";
+import Footer from "../footer/Footer";
 
 // import libraries
 import axios from "axios";
@@ -24,25 +24,26 @@ function Home() {
   }, [topRatingBooks.length]);
 
   return (
-    <div className="home__wrapper">
-      <div className="home__side-bar--margin">
-       <SideBar />
-      </div>
-      
-
-      <div className="home__carousel-wrapper">
-        <div>
-          <h2>4 Stars ratings and above</h2>
-          <Carousel books={topRatingBooks} dataTitle="topRatingBooks" />
+    <div>
+      <div className="home__wrapper">
+        <div className="home__side-bar--margin">
+        <SideBar />
         </div>
+        
 
-        <div>
-          <h2>4 Stars ratings and above</h2>
-          <Carousel books={topRatingBooks} dataTitle="topRatingBooks" />
+        <div className="home__carousel-wrapper">
+          <div>
+            <h2>4 Stars ratings and above</h2>
+            <Carousel books={topRatingBooks} dataTitle="topRatingBooks" />
+          </div>
+
+          <div>
+            <h2>4 Stars ratings and above</h2>
+            <Carousel books={topRatingBooks} dataTitle="topRatingBooks" />
+          </div>
         </div>
       </div>
-
-
+      <Footer />
     </div>
   )
 }
