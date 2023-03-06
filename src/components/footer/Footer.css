@@ -1,0 +1,31 @@
+.footer__wrapper {
+  background-color: #403042;
+  color: white;
+  padding: 40px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+}
+
+.footer__grid-col-wrapper {
+  margin-right: 30px;
+}
+
+.footer__wrapper h4, .footer__wrapper p {
+  margin: 0;
+}
+
+.footer__wrapper ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__wrapper li {
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+  padding: 15px 10px 15px 5px;
+}
+
+.footer__wrapper a {
+  color: white;
+  text-decoration: none;
+
+}
