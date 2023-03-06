@@ -1,3 +1,24 @@
+.footer__socials-wrapper {
+  text-align: center;
+  padding: 20px 0;
+  color: #999;
+  background-color: white;
+  border-top: solid 1px #f0f0f0;
+}
+
+.footer__socials-wrapper h4 {
+  padding-bottom: 10px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.footer__socials-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+
 .footer__wrapper {
   background-color: #403042;
   color: white;
