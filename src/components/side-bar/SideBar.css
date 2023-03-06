@@ -1,0 +1,7 @@
+.side-bar__wrapper {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin: 10px 40px;
+}

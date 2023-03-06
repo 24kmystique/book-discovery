@@ -7,6 +7,7 @@ import { UriEncoder } from "./helper/UriEncoder";
 import UserNavBar from "./components/user-nav-bar/UserNavBar";
 import Header from "./components/header/Header";
 import SecondaryHeader from "./components/secondary-header/SecondaryHeader";
+import SideBar from "./components/side-bar/SideBar";
 
 // import libraries
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -16,14 +17,13 @@ import { useEffect, useState } from "react";
 function App() {
 
   return (
-    <div className="app">
-
-      
+    <div>
 
       <BrowserRouter>
         <UserNavBar />
         <Header />
         <SecondaryHeader />
+        <SideBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path=":bookname/:id" element={<Book />} />
