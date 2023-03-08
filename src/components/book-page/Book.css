@@ -1,14 +1,13 @@
 .book-page--grid-wrapper {
   display: grid;
   grid-template-columns: 70% 30%;
-  border: black 2px solid;
   margin: 10px 20px;
 }
 
 .book-page__preview-wrapper {
   display: grid;
   grid-template-columns: 35% 65%;
-  background-color: lightblue;
+  background-color: white;
   padding: 20px 0;
 }
 
@@ -30,7 +29,7 @@
 
 .book-page__desc-title {
   padding-bottom: 5px;
-  border-bottom: solid #959595 1px;
+  border-bottom: solid #f0f0f0 1px;
   margin: 0;
 }
 
@@ -51,6 +50,7 @@
 .book-page__desc-summary-wrapper {
   display: inline-block;
   padding: 10px 0;
+  line-height: 25px;
 }
 
 #book-page__show-more-btn {
@@ -67,15 +67,17 @@
 }
 
 .book-page__right-col-wrapper {
-  background-color: lightcoral;
+  background-color: white;
   margin-left: 10px;
   padding: 20px;
+  height: fit-content;
 }
 
 .book-page__price-wrapper {
   display: flex;
   align-items: end;
   column-gap: 10px;
+  padding-bottom: 10px;
 }
 
 .book-page__price {
@@ -84,7 +86,7 @@
 }
 
 .book-page__old-price {
-  font-size: 16px;
+  font-size: 15px;
   font-style: italic;
   color: #333;
 }
@@ -148,9 +150,8 @@
 }
 
 .book-page__product-details-wrapper {
-  border: solid 2px red;
-  background-color: lightyellow;
-  padding: 0 20px;
+  background-color: white;
+  padding: 5px 20px;
   margin: 10px 20px;
 }
 
@@ -172,4 +173,12 @@
 
 .book-page__product-details-list label {
   font-weight: bold;
+}
+
+.book-page__txt--bolded {
+  font-weight: bold;
+}
+
+.book-page__txt--line-height {
+  line-height: 25px;
 }

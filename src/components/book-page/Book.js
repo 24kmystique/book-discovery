@@ -74,16 +74,16 @@ function Book() {
                   <div className="book-page__socials-icon-wrapper">
                     <span>Share</span>
                     <div className="book-page__socials-icon book-page__socials-mail-icon">
-                      <AiOutlineMail size={22}/>
+                      <AiOutlineMail size={20}/>
                     </div>
                     <div className="book-page__socials-icon book-page__socials-fb-icon">
-                      <TiSocialFacebook size={22}/>
+                      <TiSocialFacebook size={20}/>
                     </div>
                     <div className="book-page__socials-icon book-page__socials-twitter-icon">
-                      <TiSocialTwitter size={22}/>
+                      <TiSocialTwitter size={20}/>
                     </div>
                     <div className="book-page__socials-icon book-page__socials-pinterest-icon">
-                      <TiSocialPinterest size={22}/>
+                      <TiSocialPinterest size={20}/>
                     </div>
                   </div>
                   <div className="book-page__desc-summary-wrapper">
@@ -114,15 +114,15 @@ function Book() {
                 }
                 
                 <div className="book-page__shipping-info-wrapper">
-                  <div className="book-page__shipping-info-item">
+                  <div className="book-page__shipping-info-item book-page__txt--bolded">
                     <IoRocketOutline size={35} />
                     <p>Free delivery worldwide</p>
                   </div>
-                  <div className="book-page__shipping-info-item">
+                  <div className="book-page__shipping-info-item book-page__txt--bolded">
                     <IoRocketOutline size={35} />
-                    <p>Free delivery worldwide</p>
+                    <p>Price includes GST</p>
                   </div>
-                  <div className="book-page__shipping-info-item">
+                  <div className="book-page__shipping-info-item book-page__txt--line-height">
                     <IoRocketOutline size={35} />
                     <p>Available. Expected delivery to Singapore in 11-16 business days.</p>
                   </div>
@@ -184,8 +184,6 @@ function Book() {
               </div>
             </div>
 
-
-            <h2>People who bought this also bought</h2>
           </div>
         )}
       </div>
