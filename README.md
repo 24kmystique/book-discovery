@@ -3,7 +3,7 @@ A cloned web app of [Book Depository](https://www.bookdepository.com/).
 
 My cloned app is now deployed live: https://book-discovery.onrender.com/ . There are still a lot of touching up to do and making my components clickable. But I was too excited to wait for everything to be done up before deploying it. 
 
-Here are a list of what my deployed web can do:
+Here is a list of what my deployed web can do:
 1. Search for books in query bar
 ![Demo searching for books in query bar](assets/readme/searchForBooks.gif)
 
