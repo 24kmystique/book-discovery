@@ -1,16 +1,17 @@
 import "./Book.css";
 import "../button/Button.css";
 import { OldPriceExists, CalculateAmtSaved } from "../../helper/BookHelper";
-import { IoRocketOutline } from "react-icons/io5";
-import { AiOutlineMail } from "react-icons/ai";
-import { TiSocialFacebook, TiSocialTwitter, TiSocialPinterest } from "react-icons/ti";
+import SubscribeNewsletterInput from "../subscribe-newsletter-input/SubscribeNewsletterInput";
+import Footer from "../footer/Footer";
 
 // import libraries
 import { useLocation } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import StarRatings from "react-star-ratings";
-
+import { IoRocketOutline } from "react-icons/io5";
+import { AiOutlineMail } from "react-icons/ai";
+import { TiSocialFacebook, TiSocialTwitter, TiSocialPinterest } from "react-icons/ti";
 
 function Book() {
   const [book, setBook] = useState([]);
@@ -183,9 +184,11 @@ function Book() {
                 </ul>
               </div>
             </div>
-
           </div>
         )}
+
+        <SubscribeNewsletterInput />
+        <Footer />
       </div>
     )
   }
