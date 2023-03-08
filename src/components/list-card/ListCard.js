@@ -35,7 +35,7 @@ function ListCard(props) {
 
   return (
     <div className="list-card__wrapper">
-      <h4 className="list-card__border-btm">Best Ever Book Lists</h4>
+      <h4 className="list-card__border-btm">{props.title}</h4>
       <ul>
         {firstFewList.map((list) => (
           <li className="list-card__border-btm"><Link>{list}</Link></li>
