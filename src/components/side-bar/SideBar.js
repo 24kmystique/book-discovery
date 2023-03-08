@@ -15,6 +15,7 @@ function SideBar() {
       <AdCard imgSrc="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/content/TOG_BD_246.jpeg" imgAlt="New editions of your favourite Sarah J Maas books" />
       <ListCard title="Best Ever Book Lists" list={tempBestEverBookList} />
       <ListCard title="Popular Pages" list={tempPopularPagesList} />
+      <AdCard imgSrc="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/content/BLOG_496.jpg" imgAlt="Check Out Our Blog" />
     </div>
   )
 }
