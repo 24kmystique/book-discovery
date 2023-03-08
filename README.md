@@ -1,6 +1,18 @@
 # Book Discovery [ongoing development]
 A cloned web app of [Book Depository](https://www.bookdepository.com/).
 
+My cloned app is now deployed live: https://book-discovery.onrender.com/ . There are still a lot of touching up to do and making my components clickable. But I was too excited to wait for everything to be done up before deploying it. 
+
+Here are a list of what my deployed web can do:
+1. Search for books in query bar
+![Demo searching for books in query bar](assets/readme/searchForBooks.gif)
+
+2. Create a dynamic route for each book displayed on the Home page
+![Demo dynamic routing for each book displayed on the Home page](assets/readme/dynamicRoutingBooks.gif)
+
+3. Display dropdown menu
+![Demo display dropdown menu](assets/readme/dropdownMenu.gif)
+
 The objective of the project is to use to ReactJS and MongoDB database to develop the website. Also, to include unit tests to verify the behaviour of each part of the software, robustness and security of the website.
 
 ## How to run the project
