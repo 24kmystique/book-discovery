@@ -25,6 +25,7 @@
 .query__all-results-wrapper--absolute-pos {
   position: absolute;
   z-index: 2;
+  width: 100%;
 }
 
 .query__single-result-wrapper {
