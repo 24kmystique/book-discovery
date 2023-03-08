@@ -16,7 +16,7 @@ function UserNavBarSmall() {
         <label className="sec-header__title sec-header__link-label--padding-right--border">$0.00</label>
         <Link className="user-nav-bar-small__cart-icon-wrapper">
           <label className="sec-header__title sec-header__link-label--padding">0</label>
-          <RiShoppingBasket2Fill className="user-nav-bar-small__cart-icon" size={28} />
+          <RiShoppingBasket2Fill size={28} />
         </Link>
       </div>
       
