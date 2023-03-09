@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
 import { RiShoppingBasket2Fill } from "react-icons/ri";
+import { IoRocketOutline } from "react-icons/io5";
 
 import "./SecondaryHeader.css";
+import "./SecondaryHeaderSmall.css";
 import CategoryDropdown from "../category-dropdown/CategoryDropdown";
 import LanguageDropdown from "../language-dropdown/LanguageDropdown";
 
@@ -47,6 +49,11 @@ function SecondaryHeader() {
             <RiShoppingBasket2Fill size={24} />
           </Link>
         </nav>
+      </div>
+
+      <div className="sec-header-small__wrapper">
+        <IoRocketOutline size={24} />
+        <label>FREE DELIVERY WORDLWIDE</label>
       </div>
 
     </div>
