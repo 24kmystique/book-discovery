@@ -21,7 +21,7 @@ function App() {
       <BrowserRouter>
         <UserNavBar />
         <Header />
-        <SecondaryHeader />
+        <SecondaryHeader />    
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path=":bookname/:id" element={<Book />} />
