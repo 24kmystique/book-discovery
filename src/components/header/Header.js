@@ -25,7 +25,7 @@ function Header() {
         <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v2.25.75/img/logo.svg" />
       </div>
       <QueryBar dataBank={topRatingBooks} title="Search for a book by name, title ..." />
-      <div className="header__btn-wrapper">
+      <div className="header__search-btn-wrapper header__btn-wrapper">
         <button className="btn__primary">Search</button>
       </div>
       <div className="header__btn-wrapper">

@@ -7,12 +7,27 @@
 }
 
 .header__brand-wrapper {
-  width: 150px;
-  min-width: 150px;
-  margin-left: 40px;
-  margin-right: 40px;
+  display: none;
+}
+
+.header__search-btn-wrapper {
+  display: none;
 }
 
 .header__btn-wrapper {
-  width: 180px;
+  min-width: 180px;
+}
+
+@media (min-width: 1200px) {
+  .header__brand-wrapper {
+    display: block;
+    width: 150px;
+    min-width: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .header__search-btn-wrapper {
+    display: block;
+  }
 }
