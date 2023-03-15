@@ -1,14 +1,15 @@
 .home__wrapper {
   margin: 10px 40px 40px 40px;
   display: grid;
-  grid-template-columns: auto 80%;
+  grid-template-columns: 210px calc(100vw - 330px);
+  column-gap: 10px;
 }
 
-.home__side-bar--margin {
-  margin-right: 10px;
+.home__carousel {
+  max-width: 1200px;
 }
 
-.home__carousel-wrapper {
-  display: flex;
-  flex-direction: column;
+.home__ad-img {
+  max-width: calc(100vw - 330px);
+  object-fit: contain;
 }
