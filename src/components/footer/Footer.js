@@ -16,6 +16,22 @@ function Footer() {
           <IoLogoInstagram size={30} />
         </div>
       </div>
+      <div className="footer-small__wrapper">
+        <ul>
+          <li><Link>Sign in/Join</Link></li>
+          <li><Link>Order Status</Link></li>
+          <li><Link>Contact us</Link></li>
+          <li><Link>Help</Link></li>
+          <li><Link>About us</Link></li>
+          <li><Link>Terms & Conditions</Link></li>
+          <li><Link>Privacy policy</Link></li>
+          <li><Link>Cookies</Link></li>
+          <li><Link>UK Modern Slavery Statement</Link></li>
+        </ul>
+        <div className="footer__grid-col-wrapper">
+          <p>We accept these payment methods</p>
+        </div>
+      </div>
       <div className="footer__wrapper">
         <div className="footer__grid-col-wrapper">
           <h4>Explore</h4>

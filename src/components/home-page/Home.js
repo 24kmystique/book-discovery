@@ -27,7 +27,9 @@ function Home() {
   return (
     <div>
       <div className="home__wrapper">
-        <SideBar />
+        <div className="home__side-bar">
+          <SideBar />
+        </div>
       
         <div className="home__carousel-wrapper">
           <img className="home__ad-img" src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/content/Hachette_TikTok_23_919.png" alt="Image of books trending on TikTok" />

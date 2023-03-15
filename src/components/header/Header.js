@@ -28,7 +28,7 @@ function Header() {
       <div className="header__search-btn-wrapper header__btn-wrapper">
         <button className="btn__primary">Search</button>
       </div>
-      <div className="header__btn-wrapper">
+      <div className="header__btn-wrapper header__adv-search-btn">
         <button className="btn__light-outline">Advanced Search</button>
       </div>   
     </div>

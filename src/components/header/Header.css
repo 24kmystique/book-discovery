@@ -18,6 +18,16 @@
   min-width: 180px;
 }
 
+.header__adv-search-btn {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .header__adv-search-btn {
+    display: block;
+  }
+}
+
 @media (min-width: 1200px) {
   .header__brand-wrapper {
     display: block;
