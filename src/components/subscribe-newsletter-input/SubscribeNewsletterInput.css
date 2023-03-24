@@ -1,10 +1,11 @@
 .sub-news-input__wrapper {
   display: flex;
+  align-items: center;
   justify-content: center;
   row-gap: 10px;
-  margin: 15px;
   flex-direction: column;
   background-color: white;
+  padding: 16px 8px;
 }
 
 .sub-news-input__img-txt-wrapper {
@@ -22,12 +23,16 @@
 }
 
 .sub-news-input__img {
-  width: 50px;
+  width: 40px;
+}
+
+.sub-news-input__input-wrapper {
+  width: 100%;
 }
 
 .sub-news-input__input {
-  padding: 10px;
-  min-width: 200px;
+  padding: 10px 0;
+  width: 100%;
   color: #555;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -42,13 +47,38 @@
 }
 
 .sub-news-input__btn-wrapper {
-  min-width: 200px;
+  width: 100%;
+}
+
+.sub-news-input__btn-wrapper button {
+  display: flex;
+  width: 100%;
+  background-color: #403042;
+  color: #fff;
+  border: none;
+  height: 3rem;
+  padding: 0 1.7rem;
+  margin: 0;
+  border-radius: 0.4rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: text;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .sub-news-input__input-wrapper, .sub-news-input__btn-wrapper {
+    width: 240px;
+  }
 }
 
 
-@media (min-width: 500px) {
+@media (min-width: 1000px) {
   .sub-news-input__wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     column-gap: 15px;
     padding: 15px 0;
@@ -57,8 +87,9 @@
   
   .sub-news-input__img-txt-wrapper {
     display: flex;
-    align-items: center;
-    column-gap: 15px;
+    flex-direction: row;
+    text-align: left;
+    column-gap: 8px;
   }
   
   .sub-news-input__txt {
@@ -71,23 +102,7 @@
     width: 50px;
   }
   
-  .sub-news-input__input {
-    padding: 10px;
-    min-width: 200px;
-    color: #555;
-    font-size: 14px;
-    border: 1px solid #ccc;
-  }
-  
-  .sub-news-input__input::-webkit-input-placeholder {
-    text-align: center;
-  }
-  
-  .sub-news-input__input::-moz-placeholder {
-    text-align: center;
-  }
-  
-  .sub-news-input__btn-wrapper {
-    min-width: 200px;
+  .sub-news-input__input-wrapper, .sub-news-input__btn-wrapper {
+    width: 240px;
   }
 }
