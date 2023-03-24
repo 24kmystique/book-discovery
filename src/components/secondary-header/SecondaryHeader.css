@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .sec-header__wrapper {
     padding-left: 40px;
     padding-right: 40px;

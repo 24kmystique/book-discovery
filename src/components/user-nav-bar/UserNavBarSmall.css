@@ -121,7 +121,7 @@
   animation: slide-out-left 1s forwards;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .user-nav-bar-small__wrapper {
     display: none;
   }

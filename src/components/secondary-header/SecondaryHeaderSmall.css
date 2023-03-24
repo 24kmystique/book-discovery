@@ -8,7 +8,7 @@
   padding: 10px 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .sec-header-small__wrapper {
     display: none;
   }

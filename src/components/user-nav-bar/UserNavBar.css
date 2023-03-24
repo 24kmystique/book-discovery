@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .user-nav__wrapper {
     background-color: #403042;
     width: 100%;
