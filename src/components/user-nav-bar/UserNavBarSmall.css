@@ -109,6 +109,7 @@
 
 .user-nav-bar-small__menu-item-wrapper:hover {
   text-decoration: underline;
+  cursor: text;
 }
 
 .user-nav-bar-small-menu-wrapper {

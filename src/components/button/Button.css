@@ -10,7 +10,7 @@
   border-radius: 0.6rem;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: text;
   font-size: 15px;
 }
 
@@ -34,7 +34,7 @@
   border-radius: 0.4rem;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: text;
   font-size: 0.8rem;
   font-weight: bold;
 }
@@ -51,7 +51,7 @@
   border-radius: 0.4rem;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: text;
   font-size: 0.8rem;
   font-weight: bold;
 }
@@ -68,7 +68,7 @@
   border-radius: 0.6rem;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: text;
   margin-bottom: 10px;
   font-size: 15px;
 }
@@ -84,7 +84,7 @@
   margin: 0;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: text;
   font-size: 15px;
 }
 

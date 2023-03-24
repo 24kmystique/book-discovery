@@ -162,7 +162,7 @@
 
 #book-page__show-more-btn {
   border: none;
-  background-color: none;
+  background-color: transparent;
   color: #10bbd5;
   text-decoration: underline;
   font-weight: bold;

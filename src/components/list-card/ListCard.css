@@ -23,6 +23,7 @@
 .list-card__wrapper li a {
   text-decoration: none;
   color: black;
+  cursor: text;
 }
 
 .list-card__border-btm {
@@ -31,10 +32,10 @@
 
 .list-card__show-btn {
   border: none;
-  background-color: none;
+  background-color: transparent;
   text-decoration: underline;
   cursor: pointer;
-  color: #10bbd5;
+  color: black;
   font-weight: bold;
   padding: 0;
 }
