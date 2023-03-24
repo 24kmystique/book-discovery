@@ -1,14 +1,56 @@
-.book-page--grid-wrapper {
-  display: grid;
-  grid-template-columns: 70% 30%;
-  margin: 10px 20px;
+.book-page__wrapper {
+  display: none;
 }
 
-.book-page__preview-wrapper {
-  display: grid;
-  grid-template-columns: 35% 65%;
+.book-page-medium__wrapper {
+  display: none;
+}
+
+.book-page-small__wrapper {
+  margin: 8px;
+}
+
+.book-page-small__h3 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  padding-bottom: 4px;
+}
+
+.book-page--border-btm {
+  border-bottom: solid 1px #f0f0f0;
+}
+
+.book-page-small--padding-btm {
+  padding-bottom: 10px;
+}
+
+.book-page__card {
   background-color: white;
-  padding: 20px 0;
+  margin-bottom: 8px;
+  padding: 8px;
+  line-height: 1.6rem;
+}
+
+.book-page__desc-title {
+  padding-bottom: 5px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.book-page__desc-rating-format-author-wrapper {
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.book-page__desc-txt {
+  margin: 0;
+  padding-bottom: 4px;
+  line-height: 0.9rem;
+}
+
+.book-page__desc-rating-txt {
+  display: inline-block;
+  padding: 0 5px;
 }
 
 .book-page__bookcover-img-wrapper {
@@ -18,59 +60,16 @@
 }
 
 .book-page__bookcover-img {
-  width: 270px;
+  width: 170px;
   object-fit: contain;
 }
 
-.book-page__desc-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.book-page__desc-title {
-  padding-bottom: 5px;
-  border-bottom: solid #f0f0f0 1px;
-  margin: 0;
-}
-
-.book-page__desc-rating-format-author-wrapper {
-  padding: 10px 0;
-}
-
-.book-page__desc-txt {
-  margin: 0;
-  padding-bottom: 4px;
-}
-
-.book-page__desc-rating-txt {
-  display: inline-block;
-  padding: 0 5px;
-}
-
-.book-page__desc-summary-wrapper {
-  display: inline-block;
-  padding: 10px 0;
-  line-height: 25px;
-}
-
-#book-page__show-more-btn {
-  border: none;
-  background-color: none;
-  color: #10bbd5;
-  text-decoration: underline;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-#book-page__show-more-txt {
-  display: none;
-}
-
-.book-page__right-col-wrapper {
-  background-color: white;
-  margin-left: 10px;
-  padding: 20px;
-  height: fit-content;
+.book-page-small__price-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
 }
 
 .book-page__price-wrapper {
@@ -86,7 +85,7 @@
 }
 
 .book-page__old-price {
-  font-size: 15px;
+  font-size: 12px;
   font-style: italic;
   color: #333;
 }
@@ -96,26 +95,32 @@
 }
 
 .book-page__shipping-info-wrapper {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .book-page__shipping-info-item {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 10% 90%;
   align-items: center;
+  column-gap: 2px;
 }
 
-.book-page__btn-wrapper {
-  margin-bottom: 10px;  
+.book-page__txt--bolded {
+  font-weight: bold;
+}
+
+.book-page__txt--line-height {
+  line-height: 1.6rem;
 }
 
 .book-page__socials-icon-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 12px;
   align-items: center;
   font-weight: bold;
   padding: 10px 0;
+  justify-content: center;
 }
 
 .book-page__socials-icon {
@@ -149,16 +154,23 @@
   color: #E60023;
 }
 
-.book-page__product-details-wrapper {
-  background-color: white;
-  padding: 5px 20px;
-  margin: 10px 20px;
+.book-page__desc-summary-wrapper {
+  display: inline-block;
+  padding: 8px 0;
+  line-height: 1.6rem;
 }
 
-.book-page__product-details-list-col-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 1000px;
+#book-page__show-more-btn {
+  border: none;
+  background-color: none;
+  color: #10bbd5;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#book-page__show-more-txt {
+  display: none;
 }
 
 .book-page__product-details-list {
@@ -175,10 +187,155 @@
   font-weight: bold;
 }
 
-.book-page__txt--bolded {
-  font-weight: bold;
+.book-page__product-details-list-col-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1000px;
 }
 
-.book-page__txt--line-height {
-  line-height: 25px;
+@media (min-width: 500px) and (max-width: 1000px) {
+  .book-page-small__wrapper {
+    display: none;
+  }
+
+  .book-page-medium__wrapper {
+    display: block;
+    margin: 8px;
+  }
+
+  .book-page__wrapper {
+    display: none;
+  }
+
+  .book-page-medium__desc-title {
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .book-page-medium__col-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 8px;
+  }
+
+  .book-page__bookcover-img {
+    width: 240px;
+  }
+
+  .book-page__price-wrapper {
+    padding-top: 16px;
+  }
+
+  .book-page__old-price {
+    font-size: 0.8rem;
+  }
+
+  .book-page__shipping-info-item {
+    column-gap: 5px;
+  }
+
+}
+
+@media (min-width: 1000px) {
+  .book-page-small__wrapper {
+    display: none;
+  }
+
+  .book-page-medium__wrapper {
+    display: none;
+  }
+
+  .book-page__wrapper {
+    display: block;
+  }
+
+  .book-page--grid-wrapper {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 10px 20px;
+  }
+  
+  .book-page__preview-wrapper {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background-color: white;
+    padding: 20px 0;
+  }
+  
+  .book-page__bookcover-img {
+    width: 270px;
+  }
+  
+  .book-page__desc-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .book-page__desc-title {
+    padding-bottom: 5px;
+    border-bottom: solid #f0f0f0 1px;
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .book-page__desc-rating-format-author-wrapper {
+    font-size: 14px;
+  }
+
+  .book-page__desc-summary-wrapper {
+    padding: 10px 0;
+  }
+  
+  .book-page__right-col-wrapper {
+    background-color: white;
+    margin-left: 10px;
+    padding: 20px;
+    height: fit-content;
+  }
+  
+  .book-page__old-price {
+    font-size: 0.8rem;
+  }
+
+  .book-page__shipping-info-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .book-page__shipping-info-item {
+    grid-template-columns: 20% 80%;
+    column-gap: 5px;
+  }
+  
+  .book-page__btn-wrapper {
+    margin-bottom: 10px;  
+  }
+  
+  .book-page__socials-icon-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  
+  .book-page__socials-icon {
+    display: flex;
+    border-radius: 50%;
+    color: #999;
+    background-color: #f0f0f0;
+    width: fit-content;
+    padding: 5px 8px;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .book-page__product-details-wrapper {
+    background-color: white;
+    padding: 5px 20px;
+    margin: 10px 20px;
+  }
 }
