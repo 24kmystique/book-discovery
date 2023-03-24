@@ -114,9 +114,11 @@ function UserNavBar() {
       <div>
         <div className="user-nav-bar-small__wrapper">
           <button className="user-nav-bar-small__menu-btn" onClick={openNavMenu}><IoMdMenu className="user-nav-bar-small__menu-icon" size={28} /></button>
-          <div className="user-nav-bar-small__brand-wrapper">
-            <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v2.25.75/img/logo.svg" />
-          </div>
+          <Link to="/" className="user-nav-bar-small__brand-wrapper">
+            <div className="user-nav-bar-small__brand">
+              <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v2.25.75/img/logo.svg" />
+            </div>
+          </Link>
           <div className="user-nav-bar-small__shopping-cart-wrapper">
             <label className="sec-header__title sec-header__link-label--padding-right--border">$0.00</label>
             <Link className="user-nav-bar-small__cart-icon-wrapper">
