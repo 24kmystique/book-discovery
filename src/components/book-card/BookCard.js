@@ -64,15 +64,15 @@ function BookCard(props) {
       <p className="book-card__author">{props.author}</p>
       <div className="book-card__ratings-wrapper"><StarRatings rating={props.rating} starRatedColor="rgb(254,210,33)" starEmptyColor="rgb(211,211,211)" starDimension="15px" starSpacing="1px" /></div>
       <div>
-        <div className="book-card__price">{props.price}</div>
+        <div className="book-card__price">${props.price}</div>
         {OldPriceExists(props.oldPrice) ? 
-          <div className="book-card__old-price--inline book-card__old-price book-card__old-price--strikethrough">{props.oldPrice}</div>
+          <div className="book-card__old-price--inline book-card__old-price book-card__old-price--strikethrough">${props.oldPrice}</div>
           :
           undefined
         }
       </div>
       {OldPriceExists(props.oldPrice) ? 
-        <div className="book-card__save-price-wrapper book-card__old-price">Save {CalculateAmtSaved(props.price, props.oldPrice)}</div>
+        <div className="book-card__save-price-wrapper book-card__old-price">Save ${CalculateAmtSaved(props.price, props.oldPrice)}</div>
         :
         <div className="book-card__save-price-wrapper" />
       }
