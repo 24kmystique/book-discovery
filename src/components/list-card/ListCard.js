@@ -38,12 +38,12 @@ function ListCard(props) {
       <h4 className="list-card__border-btm">{props.title}</h4>
       <ul>
         {firstFewList.map((list) => (
-          <li className="list-card__border-btm"><Link>{list}</Link></li>
+          <li className="list-card__border-btm" key={list}><Link>{list}</Link></li>
         ))}
         {listAll ?
           <div>
           {lastFewList.map((list) => (
-            <li className="list-card__border-btm"><Link>{list}</Link></li>
+            <li className="list-card__border-btm" key={list}><Link>{list}</Link></li>
           ))}
           </div>
           :
