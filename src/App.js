@@ -12,6 +12,7 @@ import SecondaryHeader from "./components/secondary-header/SecondaryHeader";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import "./common.css";
 
 function App() {
 

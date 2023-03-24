@@ -29,6 +29,10 @@
   .sec-header__title {
     cursor: pointer;
   }
+
+  .sec-header--disable-pointer {
+    cursor: text;
+  }
   
   .sec-header__link:hover {
     border-bottom: solid 2px #403042;

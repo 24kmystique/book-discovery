@@ -98,32 +98,32 @@ function UserNavBar() {
       </div>
       <div className="user-nav__wrapper">
         <nav className="user-nav__left-wrapper">
-          <Link to='/' className="user-nav__txt"><RiHome2Fill size={24} /></Link>
-          <Link to='/' className="user-nav__txt"><AiOutlineMail size={24} />Contact us</Link>
-          <Link to='/' className="user-nav__txt"><AiOutlineInfoCircle size={24} />Help</Link>
+          <Link to='/' className="user-nav__txt" id="user-nav__home-icon"><RiHome2Fill size={24} /></Link>
+          <Link className="user-nav__txt"><AiOutlineMail size={24} />Contact us</Link>
+          <Link className="user-nav__txt"><AiOutlineInfoCircle size={24} />Help</Link>
         </nav>
         <nav className="user-nav__middle-wrapper user-nav__delivery-img">
-          <Link to='/' className="user-nav__txt"><IoRocketOutline size={24} />FREE DELIVERY WORLDWIDE</Link>
+          <Link className="user-nav__txt"><IoRocketOutline size={24} />FREE DELIVERY WORLDWIDE</Link>
         </nav>
         <nav className="user-nav__right-wrapper">
-          <Link to='/' className="user-nav__txt"><IoCompassOutline size={24} />Order Status</Link>
-          <Link to='/' className="user-nav__txt"><RiHeartLine size={24} />Wishlist</Link>
-          <Link to='/' className="user-nav__txt"><IoPersonCircleOutline size={24} />Sign in/Join</Link>
+          <Link className="user-nav__txt"><IoCompassOutline size={24} />Order Status</Link>
+          <Link className="user-nav__txt"><RiHeartLine size={24} />Wishlist</Link>
+          <Link className="user-nav__txt"><IoPersonCircleOutline size={24} />Sign in/Join</Link>
         </nav>
       </div>
       <div>
         <div className="user-nav-bar-small__wrapper">
-          <button className="user-nav-bar-small__menu-btn" onClick={openNavMenu}><IoMdMenu className="user-nav-bar-small__menu-icon" size={28} /></button>
+          <button className="user-nav-bar-small__menu-btn" onClick={openNavMenu}><IoMdMenu className="user-nav-bar-small__menu-icon" size={24} /></button>
           <Link to="/" className="user-nav-bar-small__brand-wrapper">
             <div className="user-nav-bar-small__brand">
               <img src="https://d3ogvdx946i4sr.cloudfront.net/assets/v2.25.75/img/logo.svg" />
             </div>
           </Link>
           <div className="user-nav-bar-small__shopping-cart-wrapper">
-            <label className="sec-header__title sec-header__link-label--padding-right--border">$0.00</label>
+            <label className="user-nav-bar-small__border-rgt">$0.00</label>
             <Link className="user-nav-bar-small__cart-icon-wrapper">
-              <label className="sec-header__title sec-header__link-label--padding">0</label>
-              <RiShoppingBasket2Fill size={28} />
+              <label className="user-nav-bar-small__padding-lft">0</label>
+              <RiShoppingBasket2Fill size={24} />
             </Link>
           </div>
         </div>

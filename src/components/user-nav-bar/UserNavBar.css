@@ -9,6 +9,14 @@
     display: grid;
     grid-template-columns: auto auto auto;
   }
+
+  .user-nav__wrapper a {
+    cursor: text;
+  }
+
+  #user-nav__home-icon {
+    cursor: pointer;
+  }
   
   .user-nav__left-wrapper {
     list-style: none;
@@ -32,13 +40,17 @@
   }
   
   .user-nav__txt {
-    color: white;
+    color: rgba(255,255,255,0.8);
     text-decoration: none;
     font-size: 15px;
     display: flex;
     column-gap: 10px;
     align-items: center;
     padding: 10px 10px;
+  }
+
+  .user-nav__txt:hover {
+    color: white;
   }
   
   .user-nav__delivery-img {

@@ -112,6 +112,15 @@
   cursor: text;
 }
 
+.user-nav-bar-small__border-rgt {
+  padding-right: 10px;
+  border-right: solid 1px white;
+}
+
+.user-nav-bar-small__padding-lft {
+  padding-left: 10px;
+}
+
 .user-nav-bar-small-menu-wrapper {
   display: none;
   /* visibility: hidden; */
